@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Space_Grotesk, Mohave } from "next/font/google";  // Замість Geist і Geist_Mono
+import "../styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Використовуємо Space Grotesk і Mohave
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mohave = Mohave({
+  variable: "--font-mohave",
   subsets: ["latin"],
 });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${mohave.variable} antialiased`}  // Додаємо змінні шрифтів
       >
         {children}
       </body>
