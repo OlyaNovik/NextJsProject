@@ -10,9 +10,6 @@ export default function Home() {
       <Link href="/tailwind" className="text-orange-700  mt-4 block text-4xl font-bold">
         Tailwind
       </Link>
-      <Link href="/typescript" className="text-orange-700  mt-4 block text-4xl font-bold">
-      Typescript
-      </Link>
     </div>
   );
 }
